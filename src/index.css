@@ -57,7 +57,29 @@ form {
   box-shadow: none;
 }
 
-.btn-add {
+.btn-close {
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  color: aqua;
+  transition: 0.6s;
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through black 2px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.btn {
   appearance: none;
   background-color: #000000;
   border: 2px solid #1a1a1a;
@@ -84,38 +106,16 @@ form {
   will-change: transform;
 }
 
-.btn-add:disabled {
-  pointer-events: none;
-}
-
-.btn-add:hover {
+.btn:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-.btn-add:active {
+.btn:active {
   box-shadow: none;
   transform: translateY(0);
 }
 
-.btn-close {
-  border: none;
-  outline: none;
-  background: none;
-  color: black;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-.btn-close:hover {
-  color: aqua;
-  transition: 0.6s;
-}
-
-input[type="checkbox"]:checked + span {
-  text-decoration: line-through black 2px;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
+.btn:disabled {
+  pointer-events: none;
 }
